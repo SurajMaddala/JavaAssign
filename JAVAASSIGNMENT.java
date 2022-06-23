@@ -24,7 +24,7 @@ System.out.println("Contents of the line");
 
 
 
-Scanner s = new Scanner(new FileInputStream("C:\\Users\\SURAMADD\\Desktop - Capgemini\\Desktop\\Suraj Maddala A4.doc"));
+Scanner s = new Scanner(new FileInputStream("C:\\Users\\SURAMADD\\Desktop - Capgemini\\Desktop\\Suraj Maddala A4.pdf"));
 while(s.hasNextLine())
 {
 String Content = s.nextLine();
