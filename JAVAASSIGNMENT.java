@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 
 //a) Develop a solution to check for presence of certain keywords in a resume (PDF|MSWORD) and provide %age match for further consideration.
-public class ResumeSelector_DOC
+public class resume
 {
 public static void main(String[] args) throws IOException
 {
@@ -16,7 +16,7 @@ Scanner sc = new Scanner(System.in);
 System.out.println("Enter the required Skills to be found");
 String skill = sc.next();
 boolean flag = false;
-int count = 0;
+int count = 1;
 
 
 
@@ -24,12 +24,12 @@ System.out.println("Contents of the line");
 
 
 
-Scanner s = new Scanner(new FileInputStream("C:\\Users\\SURAMADD\\Desktop\\Suraj Maddala A4.pdf"));
+Scanner s = new Scanner(new FileInputStream("C:\\Users\\SURAMADD\\Desktop\\SURAJ CAPG CV.pdf"));
 while(s.hasNextLine())
 {
 String Content = s.nextLine();
 //System.out.println(line);
-if(Content.indexOf(skill)!=-1)
+if(Content.indexOf(skill)!=0)
 {
 flag = true;
 count = count+1;
